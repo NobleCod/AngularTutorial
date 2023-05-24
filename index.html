@@ -10,11 +10,17 @@
     <title>This is my first angular app</title>
 </head>
 
-<body>
-    <h1>My First Angular Application</h1>
-    <div ng-controller="MyFirstController">
-        <input type="text" ng-model="name">
-        Inside my inputText is {{name}}
+<body ng-app="NameCalculator">
+    <h1>Name Calculator</h1>
+
+    <div ng-controller="NameCalculatorController">
+
+        <div> 
+            Your name:
+            <input type="text">
+        </div>
+
+        <div>Total Numeric Value of person's name is: {{totalValue}} </div>
 
     </div>
 
