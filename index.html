@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="DIApp">
 
 <head>
     <meta charset="UTF-8">
@@ -7,23 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
-    <title>Name Calculator</title>
+    <title>DI in JS & AngularJS</title>
 </head>
 
-<body ng-app="NameCalculator">
-    <h1>Name Calculator</h1>
+<body>
+    <h1>DI in JS & AngularJS</h1>
 
-    <div ng-controller="NameCalculatorController">
-
-        <div>
-            Your name:
-            <input type="text" ng-model="name" ng-keyup="displayNums();">
-        </div>
-
-        <div>
-            Total Numeric Value of person's name is: {{totalValue}}
-        </div>
-
+    <div ng-controller="DIController">
+        <input type="text" ng-model="name" ng-blur="upper();">
     </div>
 
 </body>
