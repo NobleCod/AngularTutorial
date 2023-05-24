@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
-    <title>This is my first angular app</title>
+    <title>Name Calculator</title>
 </head>
 
 <body ng-app="NameCalculator">
@@ -15,12 +15,14 @@
 
     <div ng-controller="NameCalculatorController">
 
-        <div> 
+        <div>
             Your name:
-            <input type="text">
+            <input type="text" ng-model="name">
         </div>
 
-        <div>Total Numeric Value of person's name is: {{totalValue}} </div>
+        <div>
+            Total Numeric Value of person's name is: {{totalValue}}
+        </div>
 
     </div>
 
