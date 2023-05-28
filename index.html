@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="DIApp">
+<html lang="en" ng-app="MsgApp">
 
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
-    <title>DI in JS & AngularJS</title>
+    <title>Expressions and Interpolation</title>
 </head>
 
 <body>
-    <h1>DI in JS & AngularJS</h1>
+    <h1>Expressions and Interpolation</h1>
 
-    <div ng-controller="DIController">
-        <input type="text" ng-model="name" ng-blur="upper();">
+    <div ng-controller="MsgController">
+        Message is: {{sayMsg();}}
+        <div>
+            <button ng-click="feedme();">Feed Me</button>
+            <br>
+            {{fed}}
+            
+        </div>
     </div>
 
 </body>
