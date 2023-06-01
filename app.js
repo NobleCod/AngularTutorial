@@ -10,5 +10,8 @@
             $scope.showNumberOfWatchers = function () {
                 console.log("# of Watchers: ", $scope.$$watchersCount);
             };
+            $scope.countOnce = function () {
+              $scope.onceCounter = 1;  
+            };
         }
 })();
