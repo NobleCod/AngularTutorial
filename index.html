@@ -14,9 +14,12 @@
     <h1>Expressions and Interpolation</h1>
 
     <div ng-controller="MsgController">
-        Message is: {{sayMsg();}}
+        Message is: {{sayMsg();}} <br>
+        Editted: {{saySisMsg()}}
         <div>
             <button ng-click="feedme();">Feed Me</button>
+            <br>
+            Cost: {{ AppleCost | currency : "#blah" : 4 }}
             <br>
             {{fed}}
             
